@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Pizza Bar | Wicker Park Chicago</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .kungfu-title { font-family: 'Bangers', cursive; letter-spacing: 1px; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+            url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* WATERMARK STYLE */
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 15vw;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.05); /* Very subtle white */
+            z-index: 10000;
+            pointer-events: none; /* Allows clicking through to buttons */
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-family: 'Bangers', cursive;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white antialiased">
+
+    <!-- Watermark -->
+    <div class="watermark">SAMPLE</div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl sm:text-3xl kungfu-title text-yellow-500 italic">KUNG FU PIZZA</h1>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="tel:7733287499" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold uppercase transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> <span class="hidden sm:inline">Call Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-[70vh] flex items-center justify-center px-4 py-20">
+        <div class="max-w-4xl text-center">
+            <div class="inline-block bg-yellow-500 text-black px-4 py-1 rounded-full font-black text-xs uppercase mb-6">
+                Wicker Park's Legendary Walk-Up Window
+            </div>
+            <h2 class="text-5xl sm:text-8xl kungfu-title mb-6 leading-tight">Master <br class="sm:hidden">The <span class="text-red-500">Slice.</span></h2>
+            <p class="text-lg sm:text-2xl text-zinc-300 mb-10 max-w-2xl mx-auto font-light">
+                NYC Thin Crust & Chicago Deep Dish. Directly across from the Division Blue Line.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.google.com/maps?q=1225+N+Milwaukee+Ave,+Chicago" target="_blank" class="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-xl font-bold uppercase hover:bg-yellow-500 transition-colors shadow-2xl">
+                    <i class="fa-solid fa-location-dot mr-2"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- The 3-Pillar Section -->
+    <section class="py-20 px-4 bg-zinc-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pillar 1 -->
+            <div class="bg-zinc-800 p-8 rounded-3xl border border-zinc-700 text-center hover:border-yellow-500 transition-colors group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🗽</div>
+                <h3 class="text-xl font-bold uppercase mb-2">NYC Slices</h3>
+                <p class="text-zinc-400 text-sm">Crispy, foldable, and loaded with premium toppings. The authentic New York experience in Chicago.</p>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="bg-zinc-800 p-8 rounded-3xl border border-zinc-700 text-center hover:border-yellow-500 transition-colors group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🥘</div>
+                <h3 class="text-xl font-bold uppercase mb-2">Deep Dish</h3>
+                <p class="text-zinc-400 text-sm">Our famous sausage deep dish served by the slice. Thick, caramelized crust and heavy on the cheese.</p>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="bg-zinc-800 p-8 rounded-3xl border border-zinc-700 text-center hover:border-yellow-500 transition-colors group">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🥠</div>
+                <h3 class="text-xl font-bold uppercase mb-2">The Vibe</h3>
+                <p class="text-zinc-400 text-sm">Walk-up window convenience. Great prices ($1-$10). And yes, you get a fortune cookie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Map Section -->
+    <section class="py-20 px-4 bg-black">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            <!-- Schedule Card -->
+            <div class="bg-zinc-900 p-6 sm:p-10 rounded-[2rem] border border-zinc-800">
+                <h3 class="text-3xl kungfu-title text-yellow-500 mb-8 italic">Operating Hours</h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800 opacity-40">
+                        <span>Monday</span>
+                        <span class="text-xs uppercase tracking-widest">Closed</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800">
+                        <span>Tuesday</span>
+                        <span class="text-yellow-500 font-bold">6:00 PM – 11:00 PM</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800">
+                        <span>Wednesday</span>
+                        <span class="text-yellow-500 font-bold">6:00 PM – 11:00 PM</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800">
+                        <span>Thursday</span>
+                        <span class="text-yellow-500 font-bold">6:00 PM – 11:00 PM</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800 text-white">
+                        <span>Friday</span>
+                        <span class="text-green-500 font-bold">6:00 PM – 12:00 AM</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-zinc-800 text-white">
+                        <span>Saturday</span>
+                        <span class="text-green-500 font-bold">6:00 PM – 12:00 AM</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 opacity-40">
+                        <span>Sunday</span>
+                        <span class="text-xs uppercase tracking-widest">Closed</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map/Address -->
+            <div class="space-y-6">
+                <div class="bg-zinc-900 p-8 rounded-[2rem] border border-zinc-800">
+                    <h4 class="text-xl font-black uppercase mb-2 text-white">Visit the Window</h4>
+                    <p class="text-zinc-400 mb-6 italic">1225 N Milwaukee Ave, Chicago, IL 60642</p>
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden grayscale contrast-125">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.412497161868!2d-87.6655!3d41.9012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d3ec37951d7%3A0x633e76f4be388e6a!2s1225%20N%20Milwaukee%20Ave%2C%20Chicago%2C%20IL%2060642!5e0!3m2!1sen!2sus!4v1710000000000" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-zinc-900 text-center">
+        <h2 class="kungfu-title text-2xl text-zinc-600 mb-4 italic uppercase">Kung Fu Pizza Bar</h2>
+        <p class="text-[10px] uppercase tracking-[0.4em] text-zinc-500">Wicker Park • Chicago • One-Man Show Mastery</p>
+        <p class="mt-8 text-zinc-800 text-[10px] uppercase font-bold tracking-widest">© 2024 • Sample Presentation</p>
+    </footer>
+
+</body>
+</html>
